@@ -1,0 +1,10 @@
+C:\src\MVCTest\bin\Debug\netcoreapp2.0\MVCTest.deps.json
+C:\src\MVCTest\bin\Debug\netcoreapp2.0\MVCTest.runtimeconfig.json
+C:\src\MVCTest\bin\Debug\netcoreapp2.0\MVCTest.runtimeconfig.dev.json
+C:\src\MVCTest\bin\Debug\netcoreapp2.0\MVCTest.dll
+C:\src\MVCTest\bin\Debug\netcoreapp2.0\MVCTest.pdb
+C:\src\MVCTest\obj\Debug\netcoreapp2.0\MVCTest.csproj.CoreCompileInputs.cache
+C:\src\MVCTest\obj\Debug\netcoreapp2.0\MVCTest.AssemblyInfoInputs.cache
+C:\src\MVCTest\obj\Debug\netcoreapp2.0\MVCTest.AssemblyInfo.cs
+C:\src\MVCTest\obj\Debug\netcoreapp2.0\MVCTest.dll
+C:\src\MVCTest\obj\Debug\netcoreapp2.0\MVCTest.pdb

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+<body>
+    <h1>Test Form</h1>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+
+<h2>User Information</h2>
+
+@using(@Html.BeginForm()) {
+    <!-- @Html.LabelFor(m => m.Id)
+    <br/>
+    <input type="number" name="Id" required/>
+    <br/> -->
+    @Html.LabelFor(m => m.FirstName) 
+    <br/>
+    <input type="text" name="FirstName" required/>
+    <br/>
+    @Html.LabelFor(m => m.LastName) 
+    <br/>
+    <input type="text" name="LastName" required/>
+    <br/>
+    @Html.LabelFor(m => m.SocialSecurity)
+    <br/>
+    <input type="password" name="SocialSecurity" required minlength="9" maxlength="9"/>
+    <br/>
+    @Html.LabelFor(m => m.PhoneNumber)
+    <br/>
+    <input type="text" name="PhoneNumber" id="phone" required minlength="10" maxlength="10"/>
+    <br/>
+    <br/>
+    <button type="submit" value="Submit">Submit</button>
+}
+</div>
+
+<div class="col-md-4">
+    <h2>User Output</h2>
+<ul class="list-group">
+<li class="list-group-item">@ViewData["FirstName"]</li>
+<li class="list-group-item">@ViewData["LastName"]</li>
+<li class="list-group-item">@ViewData["SocialSecurity"]</li>
+<li class="list-group-item">@ViewData["PhoneNumber"]</li>
+</ul>   
+</div>
+<div class="col-md-2"></div>
+</div>
+<br/>
+
+<script type="text/javascript">
+document.getElementById('phone').addEventListener('blur', function (e) {
+  var x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{4})/);
+  e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
+});
+
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=300,width=400')
+}
+</script>
+
+<h1>Fibonacci</h1>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+<p><button onclick="newPopup('/Home/Fibonacci')">Fetch Fibonacci(100)</button></p>
+</div>
+    <div class="col-md-6">
+        </div>
+    </div>
+</body>
+
+

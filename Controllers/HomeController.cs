@@ -28,9 +28,9 @@ namespace MVCTest.Controllers
             return View();
         }
 
-        public int Fibonacci()
+        public float Fibonacci()
     {
-        int[] fib = new int[100 + 1];
+        float[] fib = new float[101];
         fib[0] = 0;
         fib[1] = 1;
 
